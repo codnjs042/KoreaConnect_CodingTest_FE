@@ -1,0 +1,61 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --surface-muted: #f0f2f5;
+  --text: #1f2329;
+  --text-muted: #5f6672;
+  --border: #dde1e7;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-text: #ffffff;
+  --danger: #c62828;
+  --danger-bg: #fdecea;
+  --excel: #1d7044;
+  --radius: 8px;
+  --sans: 'Pretendard', system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', sans-serif;
+
+  font: 15px/1.5 var(--sans);
+  color: var(--text);
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --surface: #1c1f24;
+    --surface-muted: #24282f;
+    --text: #e6e8eb;
+    --text-muted: #9aa1ac;
+    --border: #323741;
+    --accent: #4f8cff;
+    --accent-hover: #6a9dff;
+    --danger: #ff8a80;
+    --danger-bg: #3a1f1f;
+    --excel: #4cc38a;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
